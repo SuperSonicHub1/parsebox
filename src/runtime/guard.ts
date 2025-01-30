@@ -26,7 +26,7 @@ THE SOFTWARE.
 
 ---------------------------------------------------------------------------*/
 
-import { IArray, IConst, IIdent, INumber, IOptional, IRef, IString, ITuple, IUnion } from './types'
+import { IArray, IConst, IIdent, INumber, IOptional, IRef, IString, ITuple, IUnion } from "./types.ts"
 
 // ------------------------------------------------------------------
 // Value Guard
@@ -83,6 +83,6 @@ export function IsUnion(value: unknown): value is IUnion {
   return IsObjectValue(value) && HasPropertyKey(value, 'type') && value.type === 'Union' && HasPropertyKey(value, 'parsers') && IsArrayValue(value.parsers)
 }
 /** Returns true if the value is a Parser */
-export function IsParser(value: unknown) {
+export function IsParser(value: unknown): value is IArray<unknown> | IConst<unknown> | IIdent<unknown> | INumber<unknown> | IOptional<unknown> | IRef<unknown> | IString<unknown> | ITuple<unknown> | IUnion<unknown> {
   return IsArray(value) || IsConst(value) || IsIdent(value) || IsNumber(value) || IsOptional(value) || IsRef(value) || IsString(value) || IsTuple(value) || IsUnion(value)
 }

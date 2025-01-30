@@ -26,8 +26,8 @@ THE SOFTWARE.
 
 ---------------------------------------------------------------------------*/
 
-import * as Tokens from './token'
-import * as Types from './types'
+import * as Tokens from "./token.ts"
+import * as Types from "./types.ts"
 
 // ------------------------------------------------------------------
 // Array

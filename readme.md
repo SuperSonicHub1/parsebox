@@ -15,6 +15,8 @@
 
 </div>
 
+Fork that supports Deno. See [`@kawcco/parsebox` on JSR](https://jsr.io/@kawcco/parsebox).
+
 ## Install
 
 ```bash

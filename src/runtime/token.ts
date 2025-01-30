@@ -219,7 +219,7 @@ function NextNumber(code: string): [] | [string, string] {
 }
 /** Scans for the next number token */
 // prettier-ignore
-export function Number(code: string) {
+export function Number(code: string): [] | [string, string] {
   return NextNumber(Trim.TrimAll(code))
 }
 // ------------------------------------------------------------------
@@ -242,6 +242,6 @@ function NextString(options: string[], code: string): [] | [string, string] {
 }
 /** Scans the next Literal String value */
 // prettier-ignore
-export function String(options: string[], code: string) {
+export function String(options: string[], code: string): [] | [string, string] {
   return NextString(options, Trim.TrimAll(code))
 }

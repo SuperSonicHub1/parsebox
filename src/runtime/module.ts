@@ -26,8 +26,8 @@ THE SOFTWARE.
 
 ---------------------------------------------------------------------------*/
 
-import * as Types from './types'
-import { Parse } from './parse'
+import * as Types from "./types.ts"
+import { Parse } from "./parse.ts"
 
 // ------------------------------------------------------------------
 // Module

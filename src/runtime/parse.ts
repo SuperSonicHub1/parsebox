@@ -26,9 +26,9 @@ THE SOFTWARE.
 
 ---------------------------------------------------------------------------*/
 
-import * as Guard from './guard'
-import * as Token from './token'
-import * as Types from './types'
+import * as Guard from "./guard.ts"
+import * as Token from "./token.ts"
+import * as Types from "./types.ts"
 
 // ------------------------------------------------------------------
 // Array

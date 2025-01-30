@@ -26,8 +26,8 @@ THE SOFTWARE.
 
 ---------------------------------------------------------------------------*/
 
-export * as Guard from './guard'
-export * as Token from './token'
-export * from './types'
-export * from './module'
-export * from './parse'
+export * as Guard from "./guard.ts"
+export * as Token from "./token.ts"
+export * from "./types.ts"
+export * from "./module.ts"
+export * from "./parse.ts"
