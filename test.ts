@@ -1,5 +1,5 @@
 import { Runtime } from "./src/index.ts";
-
+import type { Module } from "./src/index.ts";
 
 const T = Runtime.Tuple([                           // const T = {
 Runtime.Const('X'),                               //   type: 'Tuple',
